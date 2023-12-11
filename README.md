@@ -42,3 +42,11 @@ CMD  ["java","HelloWorld"]
 //tomcat user script on notepad
 <role rolename="manager-script"/>
 <user username="admin" password="admin" roles="manager-script"/>
+
+//python windows batch command assi5
+virtualenv venv
+source venv/bin/activate # for Linux/Mac, use 'venv\Scripts\activate' on windows 
+pip install -r requirements.txt
+python .\helloworld.py 
+
+
