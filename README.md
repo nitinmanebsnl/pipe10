@@ -30,3 +30,15 @@ pipeline{
         }
     }
 }
+
+
+//Docker code for 9th assi
+FROM openjdk:latest
+WORKDIR /usr/src/app
+COPY HelloWorld.java .
+RUN ["javac","HelloWorld.java"]
+CMD  ["java","HelloWorld"] 
+
+//tomcat user script on notepad
+<role rolename="manager-script"/>
+<user username="admin" password="admin" roles="manager-script"/>
